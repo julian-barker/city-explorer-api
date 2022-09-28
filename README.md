@@ -28,8 +28,9 @@ This application creates a server with endpoints from which a client can request
 
 We use express.js cors, dotenv, nodemon, and javascript and the json format.
 
-![diagram](./code-301-city-explorer-weather-diagram.png)
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+![diagram](./imgs/code-301-city-explore-diagram.png)
+![diagram](./imgs/code-301-city-explorer-weather-diagram.png)
+![diagram](./imgs/code-301-city-explorer-API-diagram.png)
 
 ## Change Log
 
