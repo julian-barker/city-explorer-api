@@ -14,13 +14,16 @@ class Restaurant {
 
 exports.get = async (req, res) => {
   try {
+    console.log('Dining Query:', req.query);
     const header = { Authorization: `Bearer ${process.env.REACT_APP_YELP_KEY}` }
     const response = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?categories=restaurants&latitude=${req.query.lat}&longitude=${req.query.lon}`, { headers: header });
     const data = response.data.businesses.slice(0,20);
     const restaurants = data.map(v => new Restaurant(v.id, v.name, v.rating, v.price, v.phone, v.image_url, v.url));
+    
     console.log(restaurants);
     res.send(restaurants);
   } catch (error) {
-    console.log(error);
+    console.log(`%cError with Dining Request`, {color: 'red', 'font-size': '1.5rem'});
+    console.log(error.message);
   }
 };
