@@ -4,32 +4,10 @@ require('dotenv').config();
 
 const express = require('express');
 const cors = require('cors');
-// const axios = require('axios');
 const weather = require('./modules/weather.js');
 const movies = require('./modules/movies.js');
 const dining = require('./modules/dining.js');
-// const data = require('./data/weather.json');
 
-
-// class Forecast {
-//   constructor(date, h, l, desc, pop) {
-//     this.date = date;
-//     this.high = h;
-//     this.low = l;
-//     this.description = `${desc}, ${pop}% precipitation`;
-//   }
-// }
-
-// class Movie {
-//   constructor(id, title, rating, year, description, url) {
-//     this.id = id;
-//     this.title = title;
-//     this.rating = rating;
-//     this.year = year;
-//     this.description = description;
-//     this.posterUrl = url;
-//   }
-// }
 
 //Start the server
 const app = express();
