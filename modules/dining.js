@@ -17,11 +17,11 @@ exports.get = async (req, res) => {
     console.log('Dining Query:', req.query);
     const header = { Authorization: `Bearer ${process.env.YELP_KEY}` }
     const response = await axios.get(`https://api.yelp.com/v3/businesses/search?categories=restaurants&latitude=${req.query.lat}&longitude=${req.query.lon}`, { headers: header });
-    console.log(response);
+    // console.log(response);
     const data = response.data.businesses.slice(0,20);
     const restaurants = data.map(v => new Restaurant(v.id, v.name, v.rating, v.price, v.phone, v.image_url, v.url));
     
-    console.log(restaurants);
+    // console.log(restaurants);
     res.send(restaurants);
   } catch (error) {
     console.log(`%cError with Dining Request`, {color: 'red', 'font-size': '1.5rem'});
