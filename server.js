@@ -7,6 +7,7 @@ const cors = require('cors');
 // const axios = require('axios');
 const weather = require('./modules/weather.js');
 const movies = require('./modules/movies.js');
+const dining = require('./modules/dining.js');
 // const data = require('./data/weather.json');
 
 
@@ -47,9 +48,11 @@ app.get('/', (req, res) => {
   res.send('Hello from the home route!');
 });
 
-app.get('/weather', weather.weather);
+app.get('/weather', weather.get);
 
-app.get('/movies', movies.movies);
+app.get('/movies', movies.get);
+
+app.get('/dining', dining.get);
 
 app.get('*', (req, res) => { 
   res.status(404).send('Error: 404 - Page Not Found');
