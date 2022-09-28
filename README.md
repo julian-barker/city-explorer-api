@@ -34,6 +34,9 @@ We use express.js cors, dotenv, nodemon, and javascript and the json format.
 ## Change Log
 
 09-27-2022 1551 - Application now handles requests for forecast data based on the query (city) and returns the appropriate data. Application handles invalid requests.
+09-27-2022 1645 - Application requests from Weatherbit API.
+09-27-2022 1820 - Application requests from TMDB API.
+09-28-2022 1045 - Application requests from Yelp Fusion API with Authorization header.
 
 ## Credit and Collaborations
 
@@ -52,3 +55,33 @@ Start time: 1300
 Finish time: 1500
 
 Actual time needed to complete: 2 hr
+
+### Request Weather from Weatherbit
+
+Estimate of time needed to complete: 1hr
+
+Start time: 1600
+
+Finish time: 1645
+
+Actual time needed to complete: 45min
+
+### Request Movies from TMDB
+
+Estimate of time needed to complete: 1hr
+
+Start time: 1700
+
+Finish time: 1820
+
+Actual time needed to complete: 1hr 20min
+
+### Request Restaurants from Yelp
+
+Estimate of time needed to complete: 1hr
+
+Start time: 0830
+
+Finish time: 1045
+
+Actual time needed to complete: 2hr 15min
