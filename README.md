@@ -38,6 +38,7 @@ We use express.js cors, dotenv, nodemon, and javascript and the json format.
 09-27-2022 1645 - Application requests from Weatherbit API.
 09-27-2022 1820 - Application requests from TMDB API.
 09-28-2022 1045 - Application requests from Yelp Fusion API with Authorization header.
+09-30-2022 1045 - Application requests from Yelp Fusion API with Authorization header.
 
 ## Credit and Collaborations
 
@@ -86,3 +87,13 @@ Start time: 0830
 Finish time: 1045
 
 Actual time needed to complete: 2hr 15min
+
+### Cache
+
+Estimate of time needed to complete: 1hr
+
+Start time: 1145
+
+Finish time: 1210
+
+Actual time needed to complete: 25min
