@@ -26,11 +26,11 @@ app.get('/', (req, res) => {
   res.send('Hello from the home route!');
 });
 
-app.get('/weather', weather.get);
+app.get('/weather', weather);
 
-app.get('/movies', movies.get);
+app.get('/movies', movies);
 
-app.get('/dining', dining.get);
+app.get('/dining', dining);
 
 app.get('*', (req, res) => { 
   res.status(404).send('Error: 404 - Page Not Found');
