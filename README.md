@@ -31,6 +31,7 @@ We use express.js cors, dotenv, nodemon, and javascript and the json format.
 ![diagram](./img/code-301-city-explorer-diagram.png)
 ![diagram](./img/code-301-city-explorer-weather-diagram.png)
 ![diagram](./img/code-301-city-explorer-API-diagram.png)
+![diagram](./img/code-301-city-explorer-cache-diagram.png)
 
 ## Change Log
 
